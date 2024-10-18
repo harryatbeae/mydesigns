@@ -73,9 +73,7 @@ class lumise_addon_mydesigns extends lumise_addons {
 	        $query .= ' WHERE '.implode(' AND ', $where);
 	        
 	        $query .= ' ORDER BY `updated` DESC';
-	        $query .= ' LIMIT '.$_index.', '.$perpage;
-	        // print_r($query);
-					// die;
+	        // $query .= ' LIMIT '.$_index.', '.$perpage;
 	        $items = $db->rawQuery($query);
 	        $total = $db->rawQuery("SELECT FOUND_ROWS() AS count");
 	        
