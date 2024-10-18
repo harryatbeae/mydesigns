@@ -1,0 +1,101 @@
+
+#lumise-saved-designs p.msg-error {
+	background: #fff;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 15px;
+    border-left: 3px solid #F44336;
+    width: 350px;
+    margin: 0 auto;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+#my-designs-login {
+	display: inline-block;
+    background: #fff;
+    padding: 10px 24px 30px;
+    margin: 30px auto 50px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+#my-designs-login>h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #888;
+}
+#my-designs-login label {
+	font-size: 14px;
+	font-weight: bold;
+    margin-right: 5px;
+}
+#my-designs-login input{
+	border: 1px solid #ddd;
+	padding: 6px 10px;
+	font-size: 15px;
+	width: 225px;
+}
+#my-designs-login button#my-designs-login-btn {
+	border: none;
+    padding: 6px 24px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #3f4652;
+    color: #fff;
+    cursor: pointer;
+    transition: background ease 250ms;
+    float: right;
+}
+#my-designs-login button#my-designs-login-btn:hover {
+    background-color: #262d39;
+}
+#my-designs-login a[data-link="register"]{
+    float: right;
+    margin: 6px 20px 0 0;
+    text-decoration: none;
+}
+#lumise-saved-designs[data-login="true"] li[data-view="add"],
+#lumise-saved-designs[data-login="true"]:before {
+	display: none;
+}
+#lumise-saved-designs li[data-view="pagination"] {
+    box-shadow: none;
+    width: 100%;
+    clear: both;
+    background: transparent;
+    cursor: default;
+    margin: 0px;
+}
+#lumise-saved-designs li[data-view="pagination"]:hover {
+    box-shadow: none;
+    background: transparent !important;
+}
+#lumise-saved-designs li[data-view="pagination"] a,
+#lumise-saved-designs li[data-view="pagination"] span {
+	text-decoration: none;
+	padding: 3px 6px;
+	border: 1px solid transparent;
+}
+#lumise-saved-designs li[data-view="pagination"] a:hover {
+	text-decoration: underline;
+}
+#lumise-saved-designs li[data-view="pagination"]>span:last-child {
+	font-size: 14px;
+    opacity: 0.35;
+    float: right;
+}
+#lumise-saved-designs li[data-view="pagination"] a i{
+    font-size: 18px !important;
+    position: relative;
+    bottom: -3px;
+}
+@media only screen and (max-width: 736px){
+	#my-designs-login label {
+		text-align: left;
+		width: 100%;
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	#my-designs-login input {
+		width: 100%;
+	}
+}
