@@ -2,8 +2,8 @@
 /*
 Name: My Designs
 Description: Storage user's designs on server
-Version: 1.0
-Compatible: 1.7
+Version: 1.1
+Compatible: 2.0.5
 platform: woocommerce
 */
 
