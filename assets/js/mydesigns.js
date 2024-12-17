@@ -221,7 +221,10 @@ function lumise_addon_mydesigns(lumise) {
 			wrp.find('a').attr({ target: '_blank' });
 
 			form.find('#my-designs-login-btn').on('click', function (e) {
-
+				// Alert before proceeding with login
+				if (!confirm("Warning: The page will reload, and your unsaved designs might be lost. Do you want to continue?")) {
+					return; // Stop further execution if user cancels the confirmation
+				}
 				wrp.attr({ 'data-loading': 'true' });
 
 				lumise.post({
@@ -250,6 +253,8 @@ function lumise_addon_mydesigns(lumise) {
 								<span data-func="edit">'+ lumise.i(107) + '</span>\
 							</li>'
 						);
+						
+            location.reload();
 
 					} else render_login_form(res);
 				});
